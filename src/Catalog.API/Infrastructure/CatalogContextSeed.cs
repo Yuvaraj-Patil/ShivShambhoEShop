@@ -27,12 +27,12 @@ public partial class CatalogContextSeed(
             var sourceItems = JsonSerializer.Deserialize<CatalogSourceEntry[]>(sourceJson);
 
             context.ProductCategory.RemoveRange(context.ProductCategory);
-            await context.ProductCategory.AddRangeAsync(sourceItems.Select(x => x.Brand).Distinct()
+            await context.ProductCategory.AddRangeAsync(sourceItems.Select(x => x.Category).Distinct()
                 .Select(brandName => new ProductCategory { CategoryName = brandName }));
             logger.LogInformation("Seeded catalog with {NumBrands} brands", context.ProductCategory.Count());
 
             context.SubCategory.RemoveRange(context.SubCategory);
-            await context.SubCategory.AddRangeAsync(sourceItems.Select(x => x.Type).Distinct()
+            await context.SubCategory.AddRangeAsync(sourceItems.Select(x => x.SubCategory).Distinct()
                 .Select(typeName => new SubCategory { SubCategoryName = typeName }));
             logger.LogInformation("Seeded catalog with {NumTypes} types", context.SubCategory.Count());
 
@@ -47,8 +47,8 @@ public partial class CatalogContextSeed(
                 Name = source.Name,
                 Description = source.Description,
                 Price = source.Price,
-                CategoryId = brandIdsByName[source.Brand],
-                SubCategoryId = typeIdsByName[source.Type],
+                CategoryId = brandIdsByName[source.Category],
+                SubCategoryId = typeIdsByName[source.SubCategory],
                 AvailableStock = 100,
                 MaxStockThreshold = 200,
                 RestockThreshold = 10,
@@ -74,8 +74,8 @@ public partial class CatalogContextSeed(
     private class CatalogSourceEntry
     {
         public int Id { get; set; }
-        public string Type { get; set; }
-        public string Brand { get; set; }
+        public string SubCategory { get; set; }
+        public string Category { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
