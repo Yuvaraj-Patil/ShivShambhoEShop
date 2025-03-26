@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.User;
+﻿namespace ShivShambho_eShop.ClientApp.Models.User;
 
 public class Address
 {

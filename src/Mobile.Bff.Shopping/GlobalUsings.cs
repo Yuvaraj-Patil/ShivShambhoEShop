@@ -1,1 +1,1 @@
-﻿global using eShop.ServiceDefaults;
+﻿global using ShivShambho_eShop.ServiceDefaults;

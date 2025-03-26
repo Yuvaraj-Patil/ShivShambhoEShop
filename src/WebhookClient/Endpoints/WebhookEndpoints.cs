@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
-namespace eShop.WebhookClient.Endpoints;
+namespace ShivShambho_eShop.WebhookClient.Endpoints;
 
 public static class WebhookEndpoints
 {
     public static IEndpointRouteBuilder MapWebhookEndpoints(this IEndpointRouteBuilder app)
     {
-        const string webhookCheckHeader = "X-eshop-whtoken";
+        const string webhookCheckHeader = "X-ShivShambho_eShop-whtoken";
 
         var configuration = app.ServiceProvider.GetRequiredService<IConfiguration>();
         bool.TryParse(configuration["ValidateToken"], out var validateToken);

@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.Navigation;
+﻿namespace ShivShambho_eShop.ClientApp.Models.Navigation;
 
 public class TabParameter
 {

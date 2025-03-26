@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>eShop.EventBus</RootNamespace>
+    <RootNamespace>ShivShambho_eShop.EventBus</RootNamespace>
     <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
 

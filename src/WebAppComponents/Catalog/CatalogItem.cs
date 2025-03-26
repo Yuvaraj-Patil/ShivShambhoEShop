@@ -1,4 +1,4 @@
-﻿namespace eShop.WebAppComponents.Catalog;
+﻿namespace ShivShambho_eShop.WebAppComponents.Catalog;
 
 public record CatalogItem(
     int Id,

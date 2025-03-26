@@ -1,7 +1,7 @@
-﻿using eShop.HybridApp.Services;
+﻿using ShivShambho_eShop.HybridApp.Services;
 using Microsoft.Extensions.Logging;
 
-namespace eShop.HybridApp;
+namespace ShivShambho_eShop.HybridApp;
 
 public static class MauiProgram
 {

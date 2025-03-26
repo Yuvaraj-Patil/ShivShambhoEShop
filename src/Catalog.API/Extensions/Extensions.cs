@@ -1,4 +1,4 @@
-﻿using eShop.Catalog.API.Services;
+﻿using ShivShambho_eShop.Catalog.API.Services;
 using Microsoft.Extensions.AI;
 using OllamaSharp;
 using OpenAI;

@@ -1,4 +1,4 @@
-﻿namespace eShop.Catalog.API.IntegrationEvents;
+﻿namespace ShivShambho_eShop.Catalog.API.IntegrationEvents;
 
 public sealed class CatalogIntegrationEventService(ILogger<CatalogIntegrationEventService> logger,
     IEventBus eventBus,

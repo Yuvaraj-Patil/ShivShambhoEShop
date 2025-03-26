@@ -1,6 +1,6 @@
-﻿namespace eShop.Ordering.API.Application.Commands;
+﻿namespace ShivShambho_eShop.Ordering.API.Application.Commands;
 
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+using ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 
 // Regular CommandHandler
 public class CreateOrderCommandHandler

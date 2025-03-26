@@ -1,4 +1,4 @@
-name: ShivShambhoEShop Pull Request Validation
+name: ShivShambhoShivShambho_eShop Pull Request Validation
 
 on:
   pull_request:
@@ -24,6 +24,6 @@ jobs:
       - name: Setup .NET (global.json)
         uses: actions/setup-dotnet@v3
       - name: Build 
-        run: dotnet build ShivShambhoEShop.Web.slnf
+        run: dotnet build ShivShambhoShivShambho_eShop.Web.slnf
       - name: Test
-        run: dotnet test ShivShambhoEShop.Web.slnf
+        run: dotnet test ShivShambhoShivShambho_eShop.Web.slnf

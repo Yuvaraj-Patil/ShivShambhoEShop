@@ -1,8 +1,8 @@
-﻿using eShop.ClientApp.Models.Basket;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Models.Marketing;
+﻿using ShivShambho_eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Models.Marketing;
 
-namespace eShop.ClientApp.Services.FixUri;
+namespace ShivShambho_eShop.ClientApp.Services.FixUri;
 
 public interface IFixUriService
 {

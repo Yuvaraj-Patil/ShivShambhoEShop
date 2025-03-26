@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace eShop.WebApp.Services;
+namespace ShivShambho_eShop.WebApp.Services;
 
 public class BasketCheckoutInfo
 {

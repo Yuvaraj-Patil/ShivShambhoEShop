@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Messaging;
-using eShop.ClientApp.Messages;
+using ShivShambho_eShop.ClientApp.Messages;
 
-namespace eShop.ClientApp.Views;
+namespace ShivShambho_eShop.ClientApp.Views;
 
 public partial class CatalogView
 {

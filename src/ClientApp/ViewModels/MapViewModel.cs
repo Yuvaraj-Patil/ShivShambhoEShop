@@ -1,7 +1,7 @@
-﻿using eShop.ClientApp.Services;
-using eShop.ClientApp.ViewModels.Base;
+﻿using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
-namespace eShop.ClientApp.ViewModels;
+namespace ShivShambho_eShop.ClientApp.ViewModels;
 
 public partial class MapViewModel : ViewModelBase
 {

@@ -1,12 +1,12 @@
 #nullable enable
 using CommunityToolkit.Mvvm.Messaging;
-using eShop.ClientApp.Messages;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.ViewModels.Base;
+using ShivShambho_eShop.ClientApp.Messages;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
-namespace eShop.ClientApp.ViewModels;
+namespace ShivShambho_eShop.ClientApp.ViewModels;
 
 public partial class CatalogViewModel : ViewModelBase
 {

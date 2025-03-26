@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+namespace ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum OrderStatus

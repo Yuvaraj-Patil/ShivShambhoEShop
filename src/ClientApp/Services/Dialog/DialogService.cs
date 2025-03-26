@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Services;
+﻿namespace ShivShambho_eShop.ClientApp.Services;
 
 public class DialogService : IDialogService
 {

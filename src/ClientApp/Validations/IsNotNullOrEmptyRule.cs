@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Validations;
+﻿namespace ShivShambho_eShop.ClientApp.Validations;
 
 public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
 {

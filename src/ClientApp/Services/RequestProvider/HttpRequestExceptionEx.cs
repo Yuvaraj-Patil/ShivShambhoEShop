@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace eShop.ClientApp.Services.RequestProvider;
+namespace ShivShambho_eShop.ClientApp.Services.RequestProvider;
 
 public class HttpRequestExceptionEx : HttpRequestException
 {

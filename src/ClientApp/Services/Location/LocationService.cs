@@ -1,8 +1,8 @@
-using eShop.ClientApp.Services.Identity;
-using eShop.ClientApp.Services.RequestProvider;
-using eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Services.RequestProvider;
+using ShivShambho_eShop.ClientApp.Services.Settings;
 
-namespace eShop.ClientApp.Services.Location;
+namespace ShivShambho_eShop.ClientApp.Services.Location;
 
 public class LocationService : ILocationService
 {

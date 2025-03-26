@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.Basket;
+﻿namespace ShivShambho_eShop.ClientApp.Models.Basket;
 
 public class CustomerBasket
 {

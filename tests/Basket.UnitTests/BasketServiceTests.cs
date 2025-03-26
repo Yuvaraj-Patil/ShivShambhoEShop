@@ -1,12 +1,12 @@
 ﻿using System.Security.Claims;
-using eShop.Basket.API.Repositories;
-using eShop.Basket.API.Grpc;
-using eShop.Basket.API.Model;
-using eShop.Basket.UnitTests.Helpers;
+using ShivShambho_eShop.Basket.API.Repositories;
+using ShivShambho_eShop.Basket.API.Grpc;
+using ShivShambho_eShop.Basket.API.Model;
+using ShivShambho_eShop.Basket.UnitTests.Helpers;
 using Microsoft.Extensions.Logging.Abstractions;
-using BasketItem = eShop.Basket.API.Model.BasketItem;
+using BasketItem = ShivShambho_eShop.Basket.API.Model.BasketItem;
 
-namespace eShop.Basket.UnitTests;
+namespace ShivShambho_eShop.Basket.UnitTests;
 
 [TestClass]
 public class BasketServiceTests

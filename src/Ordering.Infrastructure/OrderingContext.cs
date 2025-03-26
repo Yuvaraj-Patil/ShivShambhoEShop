@@ -1,6 +1,6 @@
-﻿using eShop.IntegrationEventLogEF;
+﻿using ShivShambho_eShop.IntegrationEventLogEF;
 
-namespace eShop.Ordering.Infrastructure;
+namespace ShivShambho_eShop.Ordering.Infrastructure;
 
 /// <remarks>
 /// Add migrations using the following command inside the 'Ordering.Infrastructure' project directory:

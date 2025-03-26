@@ -1,8 +1,8 @@
 ﻿using ClientApp.UnitTests.Mocks;
 using CommunityToolkit.Mvvm.Messaging;
-using eShop.ClientApp.Messages;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Messages;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Services.Identity;
 
 namespace ClientApp.UnitTests.ViewModels;
 

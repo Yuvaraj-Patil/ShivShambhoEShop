@@ -1,4 +1,4 @@
-﻿namespace eShop.Identity.API.Models.ManageViewModels
+﻿namespace ShivShambho_eShop.Identity.API.Models.ManageViewModels
 {
     public record SetPasswordViewModel
     {

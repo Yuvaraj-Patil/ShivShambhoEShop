@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Exceptions;
+﻿namespace ShivShambho_eShop.ClientApp.Exceptions;
 
 public class ServiceAuthenticationException : Exception
 {

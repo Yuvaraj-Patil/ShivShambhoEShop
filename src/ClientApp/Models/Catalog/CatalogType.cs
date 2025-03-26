@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.Catalog;
+﻿namespace ShivShambho_eShop.ClientApp.Models.Catalog;
 
 public class CatalogType
 {

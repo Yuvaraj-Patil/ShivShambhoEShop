@@ -1,6 +1,6 @@
-﻿using eShop.Basket.API.Model;
+﻿using ShivShambho_eShop.Basket.API.Model;
 
-namespace eShop.Basket.API.Repositories;
+namespace ShivShambho_eShop.Basket.API.Repositories;
 
 public interface IBasketRepository
 {

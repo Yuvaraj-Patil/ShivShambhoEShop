@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Services.Theme;
+﻿namespace ShivShambho_eShop.ClientApp.Services.Theme;
 
 public class Theme : ITheme
 {

@@ -1,6 +1,6 @@
-﻿using eShop.ClientApp.Animations.Base;
+﻿using ShivShambho_eShop.ClientApp.Animations.Base;
 
-namespace eShop.ClientApp.Animations;
+namespace ShivShambho_eShop.ClientApp.Animations;
 
 [ContentProperty("Animations")]
 public class StoryBoard : AnimationBase

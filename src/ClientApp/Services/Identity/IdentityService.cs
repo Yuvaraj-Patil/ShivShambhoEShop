@@ -1,10 +1,10 @@
-using eShop.ClientApp.Models.Token;
-using eShop.ClientApp.Models.User;
-using eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Models.Token;
+using ShivShambho_eShop.ClientApp.Models.User;
+using ShivShambho_eShop.ClientApp.Services.Settings;
 using IdentityModel.OidcClient;
 using IBrowser = IdentityModel.OidcClient.Browser.IBrowser;
 
-namespace eShop.ClientApp.Services.Identity;
+namespace ShivShambho_eShop.ClientApp.Services.Identity;
 
 public class IdentityService : IIdentityService
 {

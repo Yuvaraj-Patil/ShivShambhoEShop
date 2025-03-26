@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Infrastructure.Idempotency;
+namespace ShivShambho_eShop.Ordering.Infrastructure.Idempotency;
 
 public class ClientRequest
 {

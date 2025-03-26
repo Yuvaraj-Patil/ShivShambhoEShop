@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.UnitTests.Domain;
+﻿namespace ShivShambho_eShop.Ordering.UnitTests.Domain;
 
 [TestClass]
 public class BuyerAggregateTest

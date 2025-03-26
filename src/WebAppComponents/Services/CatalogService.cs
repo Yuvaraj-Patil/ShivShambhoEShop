@@ -1,8 +1,8 @@
 ﻿using System.Net.Http.Json;
 using System.Web;
-using eShop.WebAppComponents.Catalog;
+using ShivShambho_eShop.WebAppComponents.Catalog;
 
-namespace eShop.WebAppComponents.Services;
+namespace ShivShambho_eShop.WebAppComponents.Services;
 
 public class CatalogService(HttpClient httpClient) : ICatalogService
 {

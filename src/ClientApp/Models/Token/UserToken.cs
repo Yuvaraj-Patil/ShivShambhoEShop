@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace eShop.ClientApp.Models.Token;
+namespace ShivShambho_eShop.ClientApp.Models.Token;
 
 public class UserToken
 {

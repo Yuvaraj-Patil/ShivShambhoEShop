@@ -1,9 +1,9 @@
-﻿using eShop.EventBus.Abstractions;
+﻿using ShivShambho_eShop.EventBus.Abstractions;
 using Microsoft.Extensions.Options;
 using Npgsql;
-using eShop.OrderProcessor.Events;
+using ShivShambho_eShop.OrderProcessor.Events;
 
-namespace eShop.OrderProcessor.Services
+namespace ShivShambho_eShop.OrderProcessor.Services
 {
     public class GracePeriodManagerService(
         IOptions<BackgroundTaskOptions> options,

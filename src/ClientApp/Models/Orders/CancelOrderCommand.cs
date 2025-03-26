@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.Orders;
+﻿namespace ShivShambho_eShop.ClientApp.Models.Orders;
 
 public class CancelOrderCommand
 {

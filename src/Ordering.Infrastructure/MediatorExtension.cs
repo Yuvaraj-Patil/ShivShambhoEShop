@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Infrastructure;
+﻿namespace ShivShambho_eShop.Ordering.Infrastructure;
 
 static class MediatorExtension
 {

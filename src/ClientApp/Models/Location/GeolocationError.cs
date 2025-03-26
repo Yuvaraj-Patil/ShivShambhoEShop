@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Models.Location;
+﻿namespace ShivShambho_eShop.ClientApp.Models.Location;
 
 public enum GeolocationError
 {

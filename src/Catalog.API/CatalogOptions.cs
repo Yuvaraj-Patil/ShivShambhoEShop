@@ -1,4 +1,4 @@
-﻿namespace eShop.Catalog.API;
+﻿namespace ShivShambho_eShop.Catalog.API;
 
 public class CatalogOptions
 {

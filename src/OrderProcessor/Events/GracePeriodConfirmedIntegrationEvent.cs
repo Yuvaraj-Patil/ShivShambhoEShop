@@ -1,6 +1,6 @@
-﻿namespace eShop.OrderProcessor.Events
+﻿namespace ShivShambho_eShop.OrderProcessor.Events
 {
-    using eShop.EventBus.Events;
+    using ShivShambho_eShop.EventBus.Events;
 
     public record GracePeriodConfirmedIntegrationEvent : IntegrationEvent
     {

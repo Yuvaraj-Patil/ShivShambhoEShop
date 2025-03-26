@@ -1,4 +1,4 @@
-﻿namespace eShop.Identity.API.Models.ConsentViewModels
+﻿namespace ShivShambho_eShop.Identity.API.Models.ConsentViewModels
 {
     public class ConsentInputModel
     {

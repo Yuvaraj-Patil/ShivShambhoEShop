@@ -1,13 +1,13 @@
 ﻿using System.Diagnostics;
 using System.Globalization;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.Services.Location;
-using eShop.ClientApp.Services.Settings;
-using eShop.ClientApp.Services.Theme;
-using Location = eShop.ClientApp.Models.Location.Location;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Services.Location;
+using ShivShambho_eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Services.Theme;
+using Location = ShivShambho_eShop.ClientApp.Models.Location.Location;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public partial class App : Application
 {

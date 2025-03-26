@@ -2,7 +2,7 @@
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace eShop.HybridApp;
+namespace ShivShambho_eShop.HybridApp;
 
 internal class Program : MauiApplication
 {

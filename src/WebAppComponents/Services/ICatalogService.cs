@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using eShop.WebAppComponents.Catalog;
+using ShivShambho_eShop.WebAppComponents.Catalog;
 
-namespace eShop.WebAppComponents.Services
+namespace ShivShambho_eShop.WebAppComponents.Services
 {
     public interface ICatalogService
     {

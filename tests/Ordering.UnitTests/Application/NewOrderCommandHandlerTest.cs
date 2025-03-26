@@ -1,7 +1,7 @@
-﻿using eShop.Ordering.API.Application.IntegrationEvents;
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+﻿using ShivShambho_eShop.Ordering.API.Application.IntegrationEvents;
+using ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.UnitTests.Application;
+namespace ShivShambho_eShop.Ordering.UnitTests.Application;
 
 [TestClass]
 public class NewOrderRequestHandlerTest

@@ -1,6 +1,6 @@
-﻿using eShop.ClientApp.Models.Orders;
+﻿using ShivShambho_eShop.ClientApp.Models.Orders;
 
-namespace eShop.ClientApp.Models.User;
+namespace ShivShambho_eShop.ClientApp.Models.User;
 
 public class PaymentInfo
 {

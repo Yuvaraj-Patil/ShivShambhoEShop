@@ -1,6 +1,6 @@
 ﻿syntax = "proto3";
 
-option csharp_namespace = "eShop.ClientApp.BasketGrpcClient";
+option csharp_namespace = "ShivShambho_eShop.ClientApp.BasketGrpcClient";
 
 package BasketApi;
 

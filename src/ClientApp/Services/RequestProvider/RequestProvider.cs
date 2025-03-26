@@ -3,9 +3,9 @@ using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
-using eShop.ClientApp.Exceptions;
+using ShivShambho_eShop.ClientApp.Exceptions;
 
-namespace eShop.ClientApp.Services.RequestProvider;
+namespace ShivShambho_eShop.ClientApp.Services.RequestProvider;
 
 public class RequestProvider(HttpMessageHandler _messageHandler) : IRequestProvider
 {
@@ -169,13 +169,13 @@ public class RequestProvider(HttpMessageHandler _messageHandler) : IRequestProvi
     private static async Task<T?> ReadFromJsonAsync<T>(HttpContent content)
     {
         using var contentStream = await content.ReadAsStreamAsync().ConfigureAwait(false);
-        var data = await JsonSerializer.DeserializeAsync(contentStream, typeof(T), EShopJsonSerializerContext.Default).ConfigureAwait(false);
+        var data = await JsonSerializer.DeserializeAsync(contentStream, typeof(T), ShivShambho_eShopJsonSerializerContext.Default).ConfigureAwait(false);
         return (T?)data;
     }
 
     private static JsonContent SerializeToJson<T>(T data)
     {
-        var typeInfo = EShopJsonSerializerContext.Default.GetTypeInfo(typeof(T)) ?? throw new InvalidOperationException($"Missing type info for {typeof(T)}");
+        var typeInfo = ShivShambho_eShopJsonSerializerContext.Default.GetTypeInfo(typeof(T)) ?? throw new InvalidOperationException($"Missing type info for {typeof(T)}");
         return JsonContent.Create(data, typeInfo);
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace eShop.HybridApp;
+﻿namespace ShivShambho_eShop.HybridApp;
 
 public partial class MainPage : ContentPage
 {

@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.FunctionalTests;
+﻿namespace ShivShambho_eShop.Ordering.FunctionalTests;
 
 class AutoAuthorizeMiddleware
 {

@@ -1,6 +1,6 @@
-using eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Basket;
 
-namespace eShop.ClientApp.Services.Order;
+namespace ShivShambho_eShop.ClientApp.Services.Order;
 
 public interface IOrderService
 {

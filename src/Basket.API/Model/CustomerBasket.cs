@@ -1,4 +1,4 @@
-﻿namespace eShop.Basket.API.Model;
+﻿namespace ShivShambho_eShop.Basket.API.Model;
 
 public class CustomerBasket
 {

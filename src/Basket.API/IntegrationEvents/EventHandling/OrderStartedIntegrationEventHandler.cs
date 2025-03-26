@@ -1,7 +1,7 @@
-﻿using eShop.Basket.API.Repositories;
-using eShop.Basket.API.IntegrationEvents.EventHandling.Events;
+﻿using ShivShambho_eShop.Basket.API.Repositories;
+using ShivShambho_eShop.Basket.API.IntegrationEvents.EventHandling.Events;
 
-namespace eShop.Basket.API.IntegrationEvents.EventHandling;
+namespace ShivShambho_eShop.Basket.API.IntegrationEvents.EventHandling;
 
 public class OrderStartedIntegrationEventHandler(
     IBasketRepository repository,

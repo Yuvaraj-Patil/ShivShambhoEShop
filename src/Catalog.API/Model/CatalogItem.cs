@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 using Pgvector;
 
-namespace eShop.Catalog.API.Model;
+namespace ShivShambho_eShop.Catalog.API.Model;
 
 public class CatalogItem
 {

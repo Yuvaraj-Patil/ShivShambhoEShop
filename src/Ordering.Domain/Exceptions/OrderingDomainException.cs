@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Domain.Exceptions;
+﻿namespace ShivShambho_eShop.Ordering.Domain.Exceptions;
 
 /// <summary>
 /// Exception type for domain exceptions

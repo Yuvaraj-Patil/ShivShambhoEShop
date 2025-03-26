@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.API.Application.DomainEventHandlers;
+﻿namespace ShivShambho_eShop.Ordering.API.Application.DomainEventHandlers;
 
 public partial class OrderCancelledDomainEventHandler
                 : INotificationHandler<OrderCancelledDomainEvent>

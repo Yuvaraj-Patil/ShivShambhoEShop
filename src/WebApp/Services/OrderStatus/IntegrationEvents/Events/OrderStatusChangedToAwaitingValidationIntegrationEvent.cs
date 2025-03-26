@@ -1,6 +1,6 @@
-﻿using eShop.EventBus.Events;
+﻿using ShivShambho_eShop.EventBus.Events;
 
-namespace eShop.WebApp.Services.OrderStatus.IntegrationEvents;
+namespace ShivShambho_eShop.WebApp.Services.OrderStatus.IntegrationEvents;
 
 public record OrderStatusChangedToAwaitingValidationIntegrationEvent : IntegrationEvent
 {

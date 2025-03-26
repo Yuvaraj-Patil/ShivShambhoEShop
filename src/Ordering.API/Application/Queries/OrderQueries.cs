@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.API.Application.Queries;
+﻿namespace ShivShambho_eShop.Ordering.API.Application.Queries;
 
 public class OrderQueries(OrderingContext context)
     : IOrderQueries

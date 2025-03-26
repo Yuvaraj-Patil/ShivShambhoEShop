@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.API.Application.Behaviors;
+﻿namespace ShivShambho_eShop.Ordering.API.Application.Behaviors;
 
 using Microsoft.Extensions.Logging;
 

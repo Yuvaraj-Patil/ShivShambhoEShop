@@ -1,9 +1,9 @@
-using eShop.ClientApp.Services.Basket;
-using eShop.ClientApp.Services.Catalog;
-using eShop.ClientApp.Services.Identity;
-using eShop.ClientApp.Services.Order;
+using ShivShambho_eShop.ClientApp.Services.Basket;
+using ShivShambho_eShop.ClientApp.Services.Catalog;
+using ShivShambho_eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Services.Order;
 
-namespace eShop.ClientApp.Services.AppEnvironment;
+namespace ShivShambho_eShop.ClientApp.Services.AppEnvironment;
 
 public interface IAppEnvironmentService
 {

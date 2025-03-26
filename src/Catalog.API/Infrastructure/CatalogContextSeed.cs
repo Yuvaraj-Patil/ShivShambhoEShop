@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
-using eShop.Catalog.API.Services;
+using ShivShambho_eShop.Catalog.API.Services;
 using Pgvector;
 
-namespace eShop.Catalog.API.Infrastructure;
+namespace ShivShambho_eShop.Catalog.API.Infrastructure;
 
 public partial class CatalogContextSeed(
     IWebHostEnvironment env,

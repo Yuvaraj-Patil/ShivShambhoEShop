@@ -1,8 +1,8 @@
 using System.Globalization;
 using System.Text.Json;
-using eShop.ClientApp.Models.Token;
+using ShivShambho_eShop.ClientApp.Models.Token;
 
-namespace eShop.ClientApp.Services.Settings;
+namespace ShivShambho_eShop.ClientApp.Services.Settings;
 
 public class SettingsService : ISettingsService
 {
@@ -35,7 +35,7 @@ public class SettingsService : ISettingsService
     public async Task SetUserTokenAsync(UserToken userToken)
     {
         await SecureStorage
-            .SetAsync(UserAccessToken, userToken is not null ? JsonSerializer.Serialize(userToken, EShopJsonSerializerContext.Default.UserToken) : string.Empty)
+            .SetAsync(UserAccessToken, userToken is not null ? JsonSerializer.Serialize(userToken, ShivShambho_eShopJsonSerializerContext.Default.UserToken) : string.Empty)
             .ConfigureAwait(false);
     }
 
@@ -43,7 +43,7 @@ public class SettingsService : ISettingsService
     {
         var userToken = await SecureStorage.GetAsync(UserAccessToken).ConfigureAwait(false);
 
-        return string.IsNullOrEmpty(userToken) ? default : JsonSerializer.Deserialize(userToken, EShopJsonSerializerContext.Default.UserToken);
+        return string.IsNullOrEmpty(userToken) ? default : JsonSerializer.Deserialize(userToken, ShivShambho_eShopJsonSerializerContext.Default.UserToken);
     }
 
     public bool UseMocks

@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Services.OpenUrl;
+﻿namespace ShivShambho_eShop.ClientApp.Services.OpenUrl;
 
 public class OpenUrlService : IOpenUrlService
 {

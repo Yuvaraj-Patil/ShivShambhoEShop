@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace eShop.ClientApp.Services.Identity;
+namespace ShivShambho_eShop.ClientApp.Services.Identity;
 
 public class AuthorizeRequest
 {

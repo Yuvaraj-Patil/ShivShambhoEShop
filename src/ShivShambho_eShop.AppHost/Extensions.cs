@@ -1,7 +1,7 @@
 ﻿using Aspire.Hosting.Lifecycle;
 using Microsoft.Extensions.Configuration;
 
-namespace eShop.AppHost;
+namespace ShivShambho_eShop.AppHost;
 
 internal static class Extensions
 {
@@ -31,7 +31,7 @@ internal static class Extensions
     }
 
     /// <summary>
-    /// Configures eShop projects to use OpenAI for text embedding and chat.
+    /// Configures ShivShambho_eShop projects to use OpenAI for text embedding and chat.
     /// </summary>
     public static IDistributedApplicationBuilder AddOpenAI(this IDistributedApplicationBuilder builder,
         IResourceBuilder<ProjectResource> catalogApi,
@@ -97,7 +97,7 @@ internal static class Extensions
     }
 
     /// <summary>
-    /// Configures eShop projects to use Ollama for text embedding and chat.
+    /// Configures ShivShambho_eShop projects to use Ollama for text embedding and chat.
     /// </summary>
     public static IDistributedApplicationBuilder AddOllama(this IDistributedApplicationBuilder builder,
         IResourceBuilder<ProjectResource> catalogApi,

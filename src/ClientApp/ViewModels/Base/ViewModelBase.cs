@@ -1,6 +1,6 @@
-﻿using eShop.ClientApp.Services;
+﻿using ShivShambho_eShop.ClientApp.Services;
 
-namespace eShop.ClientApp.ViewModels.Base;
+namespace ShivShambho_eShop.ClientApp.ViewModels.Base;
 
 public abstract partial class ViewModelBase : ObservableObject, IViewModelBase
 {

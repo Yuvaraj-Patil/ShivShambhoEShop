@@ -1,6 +1,6 @@
-﻿using eShop.ClientApp.Animations.Base;
+﻿using ShivShambho_eShop.ClientApp.Animations.Base;
 
-namespace eShop.ClientApp.Triggers;
+namespace ShivShambho_eShop.ClientApp.Triggers;
 
 public class BeginAnimation : TriggerAction<VisualElement>
 {

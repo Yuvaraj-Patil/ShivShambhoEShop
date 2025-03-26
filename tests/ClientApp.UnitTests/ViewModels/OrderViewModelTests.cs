@@ -1,5 +1,5 @@
 ﻿using ClientApp.UnitTests.Mocks;
-using eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Services.Identity;
 
 namespace ClientApp.UnitTests.ViewModels;
 

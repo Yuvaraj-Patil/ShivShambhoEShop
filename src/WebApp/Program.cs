@@ -1,5 +1,5 @@
-﻿using eShop.WebApp.Components;
-using eShop.ServiceDefaults;
+﻿using ShivShambho_eShop.WebApp.Components;
+using ShivShambho_eShop.ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 

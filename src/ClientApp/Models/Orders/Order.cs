@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace eShop.ClientApp.Models.Orders;
+namespace ShivShambho_eShop.ClientApp.Models.Orders;
 
 public class Order
 {

@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Models.Orders;
-using eShop.ClientApp.Models.Token;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Models.Orders;
+using ShivShambho_eShop.ClientApp.Models.Token;
 
-namespace eShop.ClientApp.Services;
+namespace ShivShambho_eShop.ClientApp.Services;
 
 [JsonSourceGenerationOptions(
     PropertyNameCaseInsensitive = true,
@@ -16,6 +16,6 @@ namespace eShop.ClientApp.Services;
 [JsonSerializable(typeof(Models.Orders.Order))]
 [JsonSerializable(typeof(Models.Location.Location))]
 [JsonSerializable(typeof(UserToken))]
-internal partial class EShopJsonSerializerContext : JsonSerializerContext
+internal partial class ShivShambho_eShopJsonSerializerContext : JsonSerializerContext
 {
 }

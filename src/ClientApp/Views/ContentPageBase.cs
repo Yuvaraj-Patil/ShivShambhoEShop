@@ -1,6 +1,6 @@
-using eShop.ClientApp.ViewModels.Base;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
-namespace eShop.ClientApp.Views;
+namespace ShivShambho_eShop.ClientApp.Views;
 
 public abstract class ContentPageBase : ContentPage
 {

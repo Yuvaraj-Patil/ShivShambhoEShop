@@ -1,6 +1,6 @@
-﻿using eShop.WebAppComponents.Services;
+﻿using ShivShambho_eShop.WebAppComponents.Services;
 
-namespace eShop.WebApp.Services;
+namespace ShivShambho_eShop.WebApp.Services;
 
 public class ProductImageUrlProvider : IProductImageUrlProvider
 {

@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Domain.Events;
+﻿namespace ShivShambho_eShop.Ordering.Domain.Events;
 
 public class BuyerAndPaymentMethodVerifiedDomainEvent
     : INotification

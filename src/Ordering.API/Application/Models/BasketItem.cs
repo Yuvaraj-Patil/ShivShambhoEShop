@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.API.Application.Models;
+﻿namespace ShivShambho_eShop.Ordering.API.Application.Models;
 
 public class BasketItem
 {
