@@ -13,10 +13,10 @@ class CatalogItemEntityTypeConfiguration
         builder.Property(ci => ci.Embedding)
             .HasColumnType("vector(384)");
 
-        builder.HasOne(ci => ci.CatalogBrand)
+        builder.HasOne(ci => ci.Category)
             .WithMany();
 
-        builder.HasOne(ci => ci.CatalogType)
+        builder.HasOne(ci => ci.SubCategory)
             .WithMany();
 
         builder.HasIndex(ci => ci.Name);

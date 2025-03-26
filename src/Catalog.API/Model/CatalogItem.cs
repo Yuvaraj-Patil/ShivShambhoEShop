@@ -6,7 +6,7 @@ namespace ShivShambho_eShop.Catalog.API.Model;
 
 public class CatalogItem
 {
-    public int Id { get; set; }
+    public int ProductId { get; set; }
 
     [Required]
     public string Name { get; set; }
@@ -17,13 +17,13 @@ public class CatalogItem
 
     public string PictureFileName { get; set; }
 
-    public int CatalogTypeId { get; set; }
+    public int SubCategoryId { get; set; }
 
-    public CatalogType CatalogType { get; set; }
+    public SubCategory SubCategory { get; set; }
 
-    public int CatalogBrandId { get; set; }
+    public int CategoryId { get; set; }
 
-    public CatalogBrand CatalogBrand { get; set; }
+    public ProductCategory Category { get; set; }
 
     // Quantity in stock
     public int AvailableStock { get; set; }

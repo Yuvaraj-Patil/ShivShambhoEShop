@@ -1,13 +1,13 @@
 ﻿namespace ShivShambho_eShop.Catalog.API.Infrastructure.EntityConfigurations;
 
-class CatalogBrandEntityTypeConfiguration
-    : IEntityTypeConfiguration<CatalogBrand>
+class ProductCategoryEntityTypeConfiguration
+    : IEntityTypeConfiguration<ProductCategory>
 {
-    public void Configure(EntityTypeBuilder<CatalogBrand> builder)
+    public void Configure(EntityTypeBuilder<ProductCategory> builder)
     {
-        builder.ToTable("CatalogBrand");
+        builder.ToTable("ProductCategory");
 
-        builder.Property(cb => cb.Brand)
+        builder.Property(cb => cb.CategoryName)
             .HasMaxLength(100);
     }
 }

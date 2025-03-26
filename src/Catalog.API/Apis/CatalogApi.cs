@@ -76,14 +76,14 @@ public static class CatalogApi
             .WithTags("Brands");
         api.MapGet("/catalogtypes",
             [ProducesResponseType<ProblemDetails>(StatusCodes.Status400BadRequest, "application/problem+json")]
-            async (CatalogContext context) => await context.CatalogTypes.OrderBy(x => x.Type).ToListAsync())
+            async (CatalogContext context) => await context.SubCategory.OrderBy(x => x.SubCategoryName).ToListAsync())
             .WithName("ListItemTypes")
             .WithSummary("List catalog item types")
             .WithDescription("Get a list of the types of catalog items")
             .WithTags("Types");
         api.MapGet("/catalogbrands",
             [ProducesResponseType<ProblemDetails>(StatusCodes.Status400BadRequest, "application/problem+json")]
-            async (CatalogContext context) => await context.CatalogBrands.OrderBy(x => x.Brand).ToListAsync())
+            async (CatalogContext context) => await context.ProductCategory.OrderBy(x => x.CategoryName).ToListAsync())
             .WithName("ListItemBrands")
             .WithSummary("List catalog item brands")
             .WithDescription("Get a list of the brands of catalog items")
@@ -139,11 +139,11 @@ public static class CatalogApi
         }
         if (type is not null)
         {
-            root = root.Where(c => c.CatalogTypeId == type);
+            root = root.Where(c => c.SubCategoryId == type);
         }
         if (brand is not null)
         {
-            root = root.Where(c => c.CatalogBrandId == brand);
+            root = root.Where(c => c.CategoryId == brand);
         }
 
         var totalItems = await root
@@ -163,7 +163,7 @@ public static class CatalogApi
         [AsParameters] CatalogServices services,
         [Description("List of ids for catalog items to return")] int[] ids)
     {
-        var items = await services.Context.CatalogItems.Where(item => ids.Contains(item.Id)).ToListAsync();
+        var items = await services.Context.CatalogItems.Where(item => ids.Contains(item.ProductId)).ToListAsync();
         return TypedResults.Ok(items);
     }
 
@@ -180,7 +180,7 @@ public static class CatalogApi
             });
         }
 
-        var item = await services.Context.CatalogItems.Include(ci => ci.CatalogBrand).SingleOrDefaultAsync(ci => ci.Id == id);
+        var item = await services.Context.CatalogItems.Include(ci => ci.Category).SingleOrDefaultAsync(ci => ci.ProductId == id);
 
         if (item == null)
         {
@@ -305,13 +305,13 @@ public static class CatalogApi
         [AsParameters] CatalogServices services,
         CatalogItem productToUpdate)
     {
-        if (productToUpdate?.Id == null)
+        if (productToUpdate?.ProductId == null)
         {
             return TypedResults.BadRequest<ProblemDetails>(new (){
                 Detail = "Item id must be provided in the request body."
             });
         }
-        return await UpdateItem(httpContext, productToUpdate.Id, services, productToUpdate);
+        return await UpdateItem(httpContext, productToUpdate.ProductId, services, productToUpdate);
     }
 
     public static async Task<Results<Created, BadRequest<ProblemDetails>, NotFound<ProblemDetails>>> UpdateItem(
@@ -320,7 +320,7 @@ public static class CatalogApi
         [AsParameters] CatalogServices services,
         CatalogItem productToUpdate)
     {
-        var catalogItem = await services.Context.CatalogItems.SingleOrDefaultAsync(i => i.Id == id);
+        var catalogItem = await services.Context.CatalogItems.SingleOrDefaultAsync(i => i.ProductId == id);
 
         if (catalogItem == null)
         {
@@ -340,7 +340,7 @@ public static class CatalogApi
         if (priceEntry.IsModified) // Save product's data and publish integration event through the Event Bus if price has changed
         {
             //Create Integration Event to be published through the Event Bus
-            var priceChangedEvent = new ProductPriceChangedIntegrationEvent(catalogItem.Id, productToUpdate.Price, priceEntry.OriginalValue);
+            var priceChangedEvent = new ProductPriceChangedIntegrationEvent(catalogItem.ProductId, productToUpdate.Price, priceEntry.OriginalValue);
 
             // Achieving atomicity between original Catalog database operation and the IntegrationEventLog thanks to a local transaction
             await services.EventService.SaveEventAndCatalogContextChangesAsync(priceChangedEvent);
@@ -362,9 +362,9 @@ public static class CatalogApi
     {
         var item = new CatalogItem
         {
-            Id = product.Id,
-            CatalogBrandId = product.CatalogBrandId,
-            CatalogTypeId = product.CatalogTypeId,
+            ProductId = product.ProductId,
+            CategoryId = product.CategoryId,
+            SubCategoryId = product.SubCategoryId,
             Description = product.Description,
             Name = product.Name,
             PictureFileName = product.PictureFileName,
@@ -378,14 +378,14 @@ public static class CatalogApi
         services.Context.CatalogItems.Add(item);
         await services.Context.SaveChangesAsync();
 
-        return TypedResults.Created($"/api/catalog/items/{item.Id}");
+        return TypedResults.Created($"/api/catalog/items/{item.ProductId}");
     }
 
     public static async Task<Results<NoContent, NotFound>> DeleteItemById(
         [AsParameters] CatalogServices services,
         [Description("The id of the catalog item to delete")] int id)
     {
-        var item = services.Context.CatalogItems.SingleOrDefault(x => x.Id == id);
+        var item = services.Context.CatalogItems.SingleOrDefault(x => x.ProductId == id);
 
         if (item is null)
         {
