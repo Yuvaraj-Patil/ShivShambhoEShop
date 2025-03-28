@@ -1,5 +1,5 @@
-﻿using eShop.ClientApp.Validations;
-using eShop.ClientApp.ViewModels.Base;
+﻿using ShivShambho_eShop.ClientApp.Validations;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
 namespace ClientApp.UnitTests.Mocks;
 

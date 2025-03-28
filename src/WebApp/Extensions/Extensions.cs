@@ -1,7 +1,7 @@
-﻿using eShop.Basket.API.Grpc;
-using eShop.WebApp;
-using eShop.WebApp.Services.OrderStatus.IntegrationEvents;
-using eShop.WebAppComponents.Services;
+﻿using ShivShambho_eShop.Basket.API.Grpc;
+using ShivShambho_eShop.WebApp;
+using ShivShambho_eShop.WebApp.Services.OrderStatus.IntegrationEvents;
+using ShivShambho_eShop.WebAppComponents.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Components.Authorization;

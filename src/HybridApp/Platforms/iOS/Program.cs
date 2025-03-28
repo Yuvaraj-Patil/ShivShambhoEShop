@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace eShop.HybridApp;
+namespace ShivShambho_eShop.HybridApp;
 
 public class Program
 {

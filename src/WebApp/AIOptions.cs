@@ -1,4 +1,4 @@
-﻿namespace eShop.WebApp;
+﻿namespace ShivShambho_eShop.WebApp;
 
 public class AIOptions
 {

@@ -1,8 +1,8 @@
-﻿using eShop.Basket.API.Grpc;
-using GrpcBasketItem = eShop.Basket.API.Grpc.BasketItem;
-using GrpcBasketClient = eShop.Basket.API.Grpc.Basket.BasketClient;
+﻿using ShivShambho_eShop.Basket.API.Grpc;
+using GrpcBasketItem = ShivShambho_eShop.Basket.API.Grpc.BasketItem;
+using GrpcBasketClient = ShivShambho_eShop.Basket.API.Grpc.Basket.BasketClient;
 
-namespace eShop.WebApp.Services;
+namespace ShivShambho_eShop.WebApp.Services;
 
 public class BasketService(GrpcBasketClient basketClient)
 {

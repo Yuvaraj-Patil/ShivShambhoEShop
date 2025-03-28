@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public class Program
 {

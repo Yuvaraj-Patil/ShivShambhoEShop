@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Helpers;
+﻿namespace ShivShambho_eShop.ClientApp.Helpers;
 
 public static class UriHelper
 {

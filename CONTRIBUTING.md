@@ -1,6 +1,6 @@
-# Contributing to eShop
+# Contributing to ShivShambho_eShop
 
-Thank you for your interest in contributing to eShop! We're excited to collaborate with you and see how together we can improve and evolve this sample application.
+Thank you for your interest in contributing to ShivShambho_eShop! We're excited to collaborate with you and see how together we can improve and evolve this sample application.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ Typos and other small fixes are important to us -— no contribution is too smal
 
 ## Have a Suggestion?
 
-If you have a suggestion on how to enhance eShop, please open an issue with the following details:
+If you have a suggestion on how to enhance ShivShambho_eShop, please open an issue with the following details:
 - A clear title and description of the suggestion
 - Any relevant examples or mockups
 - Indicate whether you're interested in implementing the feature yourself
@@ -29,9 +29,9 @@ When considering contributions, we're guided by several principles that align wi
 
 - **Architectural Integrity**: We welcome refactoring and architectural improvements, provided they're justified. Large-scale changes should come with a clear rationale, such as significant enhancements to the application's design or performance.
 
-- **Enhancing Reliability and Scalability**: We welcome contributions that improve the application's reliability and scalability. These could include updates to error handling, redundancy mechanisms, data access, and any other changes that help eShop operate more robustly under load. We'd love to see relevant test scenarios or metrics for these contributions.
+- **Enhancing Reliability and Scalability**: We welcome contributions that improve the application's reliability and scalability. These could include updates to error handling, redundancy mechanisms, data access, and any other changes that help ShivShambho_eShop operate more robustly under load. We'd love to see relevant test scenarios or metrics for these contributions.
 
-- **Performance Enhancements**: If you're looking to speed up eShop, we're all for it! Please include benchmark comparisons to demonstrate the improvements. Performance improvements that make the code less readable or canonical may have more scrutiny applied.
+- **Performance Enhancements**: If you're looking to speed up ShivShambho_eShop, we're all for it! Please include benchmark comparisons to demonstrate the improvements. Performance improvements that make the code less readable or canonical may have more scrutiny applied.
 
 ## Code of Conduct
 

@@ -1,7 +1,7 @@
-using eShop.ClientApp.Models.User;
-using eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Models.User;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
 
-namespace eShop.ClientApp.Services;
+namespace ShivShambho_eShop.ClientApp.Services;
 
 public class MauiNavigationService : INavigationService
 {

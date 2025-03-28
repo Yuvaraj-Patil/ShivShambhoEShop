@@ -1,4 +1,4 @@
-﻿using eShop.AppHost;
+﻿using ShivShambho_eShop.AppHost;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
@@ -106,7 +106,7 @@ builder.Build().Run();
 // are doing this for ease of running the Playwright tests in CI.
 static bool ShouldUseHttpForEndpoints()
 {
-    const string EnvVarName = "ESHOP_USE_HTTP_ENDPOINTS";
+    const string EnvVarName = "ShivShambho_eShop_USE_HTTP_ENDPOINTS";
     var envValue = Environment.GetEnvironmentVariable(EnvVarName);
 
     // Attempt to parse the environment variable value; return true if it's exactly "1".

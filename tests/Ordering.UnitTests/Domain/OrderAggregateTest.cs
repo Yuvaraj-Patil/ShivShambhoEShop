@@ -1,7 +1,7 @@
-﻿namespace eShop.Ordering.UnitTests.Domain;
+﻿namespace ShivShambho_eShop.Ordering.UnitTests.Domain;
 
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
-using eShop.Ordering.UnitTests.Domain;
+using ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+using ShivShambho_eShop.Ordering.UnitTests.Domain;
 
 [TestClass]
 public class OrderAggregateTest

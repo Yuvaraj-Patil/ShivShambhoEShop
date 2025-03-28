@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public static class ICommandExtensions
 {

@@ -1,6 +1,6 @@
 ﻿using Pgvector;
 
-namespace eShop.Catalog.API.Services;
+namespace ShivShambho_eShop.Catalog.API.Services;
 
 public interface ICatalogAI
 {

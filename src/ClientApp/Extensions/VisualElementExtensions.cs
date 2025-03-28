@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
 using System.Reflection;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public static class VisualElementExtensions
 {

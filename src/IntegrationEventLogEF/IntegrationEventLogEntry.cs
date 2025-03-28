@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace eShop.IntegrationEventLogEF;
+namespace ShivShambho_eShop.IntegrationEventLogEF;
 
 public class IntegrationEventLogEntry
 {

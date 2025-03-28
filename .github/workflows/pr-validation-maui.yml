@@ -1,4 +1,4 @@
-name: eShop Pull Request Validation - .NET MAUI
+name: ShivShambho_eShop Pull Request Validation - .NET MAUI
 
 on:
   pull_request:

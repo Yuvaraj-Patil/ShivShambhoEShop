@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Services.Location;
+﻿namespace ShivShambho_eShop.ClientApp.Services.Location;
 
 public interface ILocationService
 {

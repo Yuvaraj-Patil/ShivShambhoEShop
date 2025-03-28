@@ -1,4 +1,4 @@
-﻿namespace eShop.PaymentProcessor.IntegrationEvents.EventHandling;
+﻿namespace ShivShambho_eShop.PaymentProcessor.IntegrationEvents.EventHandling;
 
 public class OrderStatusChangedToStockConfirmedIntegrationEventHandler(
     IEventBus eventBus,

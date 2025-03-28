@@ -1,7 +1,7 @@
-﻿using eShop.ClientApp.Services;
-using eShop.ClientApp.Views;
+﻿using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Views;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public partial class AppShell : Shell
 {

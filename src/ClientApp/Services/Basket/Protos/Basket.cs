@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace eShop.ClientApp.BasketGrpcClient {
+namespace ShivShambho_eShop.ClientApp.BasketGrpcClient {
 
   /// <summary>Holder for reflection information generated from Services/Basket/Protos/basket.proto</summary>
   public static partial class BasketReflection {
@@ -41,12 +41,12 @@ namespace eShop.ClientApp.BasketGrpcClient {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.GetBasketRequest), global::eShop.ClientApp.BasketGrpcClient.GetBasketRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.CustomerBasketResponse), global::eShop.ClientApp.BasketGrpcClient.CustomerBasketResponse.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.BasketItem), global::eShop.ClientApp.BasketGrpcClient.BasketItem.Parser, new[]{ "ProductId", "Quantity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.UpdateBasketRequest), global::eShop.ClientApp.BasketGrpcClient.UpdateBasketRequest.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.DeleteBasketRequest), global::eShop.ClientApp.BasketGrpcClient.DeleteBasketRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::eShop.ClientApp.BasketGrpcClient.DeleteBasketResponse), global::eShop.ClientApp.BasketGrpcClient.DeleteBasketResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.GetBasketRequest), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.GetBasketRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.CustomerBasketResponse), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.CustomerBasketResponse.Parser, new[]{ "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem.Parser, new[]{ "ProductId", "Quantity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.UpdateBasketRequest), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.UpdateBasketRequest.Parser, new[]{ "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.DeleteBasketRequest), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.DeleteBasketRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShivShambho_eShop.ClientApp.BasketGrpcClient.DeleteBasketResponse), global::ShivShambho_eShop.ClientApp.BasketGrpcClient.DeleteBasketResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -68,7 +68,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -229,7 +229,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -261,12 +261,12 @@ namespace eShop.ClientApp.BasketGrpcClient {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::eShop.ClientApp.BasketGrpcClient.BasketItem> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(10, global::eShop.ClientApp.BasketGrpcClient.BasketItem.Parser);
-    private readonly pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem> items_ = new pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem>();
+    private static readonly pb::FieldCodec<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem.Parser);
+    private readonly pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> items_ = new pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem> Items {
+    public pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> Items {
       get { return items_; }
     }
 
@@ -416,7 +416,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -651,7 +651,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -683,12 +683,12 @@ namespace eShop.ClientApp.BasketGrpcClient {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::eShop.ClientApp.BasketGrpcClient.BasketItem> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(18, global::eShop.ClientApp.BasketGrpcClient.BasketItem.Parser);
-    private readonly pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem> items_ = new pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem>();
+    private static readonly pb::FieldCodec<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(18, global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem.Parser);
+    private readonly pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> items_ = new pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::eShop.ClientApp.BasketGrpcClient.BasketItem> Items {
+    public pbc::RepeatedField<global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketItem> Items {
       get { return items_; }
     }
 
@@ -838,7 +838,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -999,7 +999,7 @@ namespace eShop.ClientApp.BasketGrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ShivShambho_eShop.ClientApp.BasketGrpcClient.BasketReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

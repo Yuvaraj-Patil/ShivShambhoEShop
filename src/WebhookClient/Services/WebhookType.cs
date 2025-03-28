@@ -1,4 +1,4 @@
-﻿namespace eShop.WebhookClient.Services;
+﻿namespace ShivShambho_eShop.WebhookClient.Services;
 
 public enum WebhookType
 {

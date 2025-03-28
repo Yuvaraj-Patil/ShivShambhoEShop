@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace eShop.HybridApp;
+namespace ShivShambho_eShop.HybridApp;
 
 [Application]
 public class MainApplication : MauiApplication

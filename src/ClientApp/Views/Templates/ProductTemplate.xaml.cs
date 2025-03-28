@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Views.Templates;
+﻿namespace ShivShambho_eShop.ClientApp.Views.Templates;
 
 public partial class ProductTemplate : ContentView
 {

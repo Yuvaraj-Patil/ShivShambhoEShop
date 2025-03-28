@@ -1,6 +1,6 @@
-﻿using eShop.WebAppComponents.Catalog;
+﻿using ShivShambho_eShop.WebAppComponents.Catalog;
 
-namespace eShop.WebAppComponents.Item;
+namespace ShivShambho_eShop.WebAppComponents.Item;
 
 public static class ItemHelper
 {

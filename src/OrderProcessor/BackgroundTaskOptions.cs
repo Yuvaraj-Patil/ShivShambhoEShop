@@ -1,4 +1,4 @@
-﻿namespace eShop.OrderProcessor;
+﻿namespace ShivShambho_eShop.OrderProcessor;
 
 public class BackgroundTaskOptions
 {

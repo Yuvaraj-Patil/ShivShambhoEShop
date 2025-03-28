@@ -1,4 +1,4 @@
-﻿namespace eShop.Catalog.API.IntegrationEvents.EventHandling;
+﻿namespace ShivShambho_eShop.Catalog.API.IntegrationEvents.EventHandling;
 
 public class OrderStatusChangedToPaidIntegrationEventHandler(
     CatalogContext catalogContext,

@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Domain.Seedwork;
+﻿namespace ShivShambho_eShop.Ordering.Domain.Seedwork;
 
 public interface IAggregateRoot { }
 

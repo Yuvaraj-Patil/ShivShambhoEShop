@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.UnitTests.Application;
+﻿namespace ShivShambho_eShop.Ordering.UnitTests.Application;
 
 [TestClass]
 public class IdentifiedCommandHandlerTest

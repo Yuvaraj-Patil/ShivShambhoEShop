@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Views;
+﻿namespace ShivShambho_eShop.ClientApp.Views;
 
 public partial class FiltersView : ContentPage
 {

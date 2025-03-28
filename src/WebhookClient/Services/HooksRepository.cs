@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace eShop.WebhookClient.Services;
+namespace ShivShambho_eShop.WebhookClient.Services;
 
 public class HooksRepository
 {

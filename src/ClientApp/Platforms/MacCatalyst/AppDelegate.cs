@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

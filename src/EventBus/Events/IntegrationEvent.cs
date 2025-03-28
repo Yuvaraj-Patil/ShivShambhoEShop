@@ -1,4 +1,4 @@
-﻿namespace eShop.EventBus.Events;
+﻿namespace ShivShambho_eShop.EventBus.Events;
 
 public record IntegrationEvent
 {

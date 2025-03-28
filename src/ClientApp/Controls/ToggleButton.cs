@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace eShop.ClientApp.Controls;
+namespace ShivShambho_eShop.ClientApp.Controls;
 
 public class ToggleButton : ContentView
 {

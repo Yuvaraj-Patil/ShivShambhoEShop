@@ -1,4 +1,4 @@
-﻿namespace eShop.WebApp.Services;
+﻿namespace ShivShambho_eShop.WebApp.Services;
 
 public class OrderingService(HttpClient httpClient)
 {

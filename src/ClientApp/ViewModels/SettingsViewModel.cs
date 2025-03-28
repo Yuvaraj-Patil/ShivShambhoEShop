@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Input;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.Services.Location;
-using eShop.ClientApp.Services.Settings;
-using eShop.ClientApp.ViewModels.Base;
-using Location = eShop.ClientApp.Models.Location.Location;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Services.Location;
+using ShivShambho_eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
+using Location = ShivShambho_eShop.ClientApp.Models.Location.Location;
 
-namespace eShop.ClientApp.ViewModels;
+namespace ShivShambho_eShop.ClientApp.ViewModels;
 
 public class SettingsViewModel : ViewModelBase
 {
@@ -78,7 +78,7 @@ public class SettingsViewModel : ViewModelBase
         UseAzureServices = !_settingsService.UseMocks;
     }
 
-    public string TitleUseAzureServices => "Use Microservices/Containers from eShop";
+    public string TitleUseAzureServices => "Use Microservices/Containers from ShivShambho_eShop";
 
     public string DescriptionUseAzureServices => !UseAzureServices
         ? "Currently using mock services that are simulated objects that mimic the behavior of real services using a controlled approach. Toggle on to configure the use of microserivces/containers."

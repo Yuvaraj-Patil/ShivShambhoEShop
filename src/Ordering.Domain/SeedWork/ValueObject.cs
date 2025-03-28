@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Domain.SeedWork;
+﻿namespace ShivShambho_eShop.Ordering.Domain.SeedWork;
 
 public abstract class ValueObject
 {

@@ -1,12 +1,12 @@
 using System.Diagnostics;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.Services.OpenUrl;
-using eShop.ClientApp.Services.Settings;
-using eShop.ClientApp.Validations;
-using eShop.ClientApp.ViewModels.Base;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Services.OpenUrl;
+using ShivShambho_eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Validations;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
-namespace eShop.ClientApp.ViewModels;
+namespace ShivShambho_eShop.ClientApp.ViewModels;
 
 public partial class LoginViewModel : ViewModelBase
 {

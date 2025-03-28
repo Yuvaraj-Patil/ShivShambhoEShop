@@ -1,6 +1,6 @@
-using eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
 
-namespace eShop.ClientApp.Services.Catalog;
+namespace ShivShambho_eShop.ClientApp.Services.Catalog;
 
 public interface ICatalogService
 {

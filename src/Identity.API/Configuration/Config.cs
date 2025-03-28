@@ -1,4 +1,4 @@
-﻿namespace eShop.Identity.API.Configuration
+﻿namespace ShivShambho_eShop.Identity.API.Configuration
 {
     public class Config
     {
@@ -44,7 +44,7 @@
                 new Client
                 {
                     ClientId = "maui",
-                    ClientName = "eShop MAUI OpenId Client",
+                    ClientName = "ShivShambho_eShop MAUI OpenId Client",
                     AllowedGrantTypes = GrantTypes.Code,                    
                     //Used to retrieve the access token on the back channel.
                     ClientSecrets =
@@ -55,7 +55,7 @@
                     RequireConsent = false,
                     RequirePkce = true,
                     PostLogoutRedirectUris = { $"{configuration["MauiCallback"]}/Account/Redirecting" },
-                    //AllowedCorsOrigins = { "http://eshopxamarin" },
+                    //AllowedCorsOrigins = { "http://ShivShambho_eShopxamarin" },
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -63,7 +63,7 @@
                         IdentityServerConstants.StandardScopes.OfflineAccess,
                         "orders",
                         "basket",
-                        "mobileshoppingagg",
+                        "mobilShivShambho_eShoppingagg",
                         "webhooks"
                     },
                     //Allow requesting refresh tokens for long lived API access

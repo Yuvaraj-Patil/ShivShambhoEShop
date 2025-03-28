@@ -1,4 +1,4 @@
-﻿namespace eShop.Identity.API.Services
+﻿namespace ShivShambho_eShop.Identity.API.Services
 {
     public interface ILoginService<T>
     {

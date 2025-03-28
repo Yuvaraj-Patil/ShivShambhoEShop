@@ -9,7 +9,7 @@ using Microsoft.Extensions.Primitives;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 
-namespace eShop.ServiceDefaults;
+namespace ShivShambho_eShop.ServiceDefaults;
 
 internal static class OpenApiOptionsExtensions
 {

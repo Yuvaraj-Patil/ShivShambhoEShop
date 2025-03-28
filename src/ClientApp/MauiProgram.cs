@@ -1,23 +1,23 @@
 ﻿using CommunityToolkit.Maui;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.Services.Basket;
-using eShop.ClientApp.Services.Catalog;
-using eShop.ClientApp.Services.FixUri;
-using eShop.ClientApp.Services.Identity;
-using eShop.ClientApp.Services.Location;
-using eShop.ClientApp.Services.OpenUrl;
-using eShop.ClientApp.Services.Order;
-using eShop.ClientApp.Services.RequestProvider;
-using eShop.ClientApp.Services.Settings;
-using eShop.ClientApp.Services.Theme;
-using eShop.ClientApp.Views;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Services.Basket;
+using ShivShambho_eShop.ClientApp.Services.Catalog;
+using ShivShambho_eShop.ClientApp.Services.FixUri;
+using ShivShambho_eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Services.Location;
+using ShivShambho_eShop.ClientApp.Services.OpenUrl;
+using ShivShambho_eShop.ClientApp.Services.Order;
+using ShivShambho_eShop.ClientApp.Services.RequestProvider;
+using ShivShambho_eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Services.Theme;
+using ShivShambho_eShop.ClientApp.Views;
 using IdentityModel.OidcClient;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using IBrowser = IdentityModel.OidcClient.Browser.IBrowser;
 
-namespace eShop.ClientApp;
+namespace ShivShambho_eShop.ClientApp;
 
 public static class MauiProgram
 {

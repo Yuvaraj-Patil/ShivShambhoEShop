@@ -1,5 +1,5 @@
-﻿global using eShop.ServiceDefaults;
-global using eShop.WebhookClient.Components;
-global using eShop.WebhookClient.Endpoints;
-global using eShop.WebhookClient.Extensions;
-global using eShop.WebhookClient.Services;
+﻿global using ShivShambho_eShop.ServiceDefaults;
+global using ShivShambho_eShop.WebhookClient.Components;
+global using ShivShambho_eShop.WebhookClient.Endpoints;
+global using ShivShambho_eShop.WebhookClient.Extensions;
+global using ShivShambho_eShop.WebhookClient.Services;

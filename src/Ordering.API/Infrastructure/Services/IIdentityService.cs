@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.API.Infrastructure.Services;
+﻿namespace ShivShambho_eShop.Ordering.API.Infrastructure.Services;
 
 public interface IIdentityService
 {

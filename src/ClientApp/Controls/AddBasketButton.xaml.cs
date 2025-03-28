@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Controls;
+﻿namespace ShivShambho_eShop.ClientApp.Controls;
 
 public partial class AddBasketButton : Grid
 {

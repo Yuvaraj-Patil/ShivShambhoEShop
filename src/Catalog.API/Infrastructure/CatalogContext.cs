@@ -1,4 +1,4 @@
-﻿namespace eShop.Catalog.API.Infrastructure;
+﻿namespace ShivShambho_eShop.Catalog.API.Infrastructure;
 
 /// <remarks>
 /// Add migrations using the following command inside the 'Catalog.API' project directory:
@@ -12,14 +12,14 @@ public class CatalogContext : DbContext
     }
 
     public DbSet<CatalogItem> CatalogItems { get; set; }
-    public DbSet<CatalogBrand> CatalogBrands { get; set; }
-    public DbSet<CatalogType> CatalogTypes { get; set; }
+    public DbSet<ProductCategory> ProductCategory { get; set; }
+    public DbSet<SubCategory> SubCategory { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.HasPostgresExtension("vector");
-        builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
-        builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
+        builder.ApplyConfiguration(new ProductCategoryEntityTypeConfiguration());
+        builder.ApplyConfiguration(new SubCategoryEntityTypeConfiguration());
         builder.ApplyConfiguration(new CatalogItemEntityTypeConfiguration());
 
         // Add the outbox table to this context

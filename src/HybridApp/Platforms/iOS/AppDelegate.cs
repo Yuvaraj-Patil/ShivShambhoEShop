@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace eShop.HybridApp;
+namespace ShivShambho_eShop.HybridApp;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

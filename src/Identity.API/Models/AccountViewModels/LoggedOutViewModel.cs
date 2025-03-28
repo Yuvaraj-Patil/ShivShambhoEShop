@@ -1,4 +1,4 @@
-﻿namespace eShop.Identity.API.Models.AccountViewModels
+﻿namespace ShivShambho_eShop.Identity.API.Models.AccountViewModels
 {
     public record LoggedOutViewModel
     {

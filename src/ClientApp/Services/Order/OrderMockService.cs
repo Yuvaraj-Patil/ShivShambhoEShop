@@ -1,8 +1,8 @@
-using eShop.ClientApp.Models.Basket;
-using eShop.ClientApp.Models.Orders;
-using eShop.ClientApp.Models.User;
+using ShivShambho_eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Orders;
+using ShivShambho_eShop.ClientApp.Models.User;
 
-namespace eShop.ClientApp.Services.Order;
+namespace ShivShambho_eShop.ClientApp.Services.Order;
 
 public class OrderMockService : IOrderService
 {

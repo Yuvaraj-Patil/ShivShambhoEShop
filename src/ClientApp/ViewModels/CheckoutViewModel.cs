@@ -1,14 +1,14 @@
 using CommunityToolkit.Mvvm.Messaging;
-using eShop.ClientApp.Messages;
-using eShop.ClientApp.Models.Basket;
-using eShop.ClientApp.Models.Orders;
-using eShop.ClientApp.Models.User;
-using eShop.ClientApp.Services;
-using eShop.ClientApp.Services.AppEnvironment;
-using eShop.ClientApp.Services.Settings;
-using eShop.ClientApp.ViewModels.Base;
+using ShivShambho_eShop.ClientApp.Messages;
+using ShivShambho_eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Orders;
+using ShivShambho_eShop.ClientApp.Models.User;
+using ShivShambho_eShop.ClientApp.Services;
+using ShivShambho_eShop.ClientApp.Services.AppEnvironment;
+using ShivShambho_eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.ViewModels.Base;
 
-namespace eShop.ClientApp.ViewModels;
+namespace ShivShambho_eShop.ClientApp.ViewModels;
 
 public partial class CheckoutViewModel : ViewModelBase
 {

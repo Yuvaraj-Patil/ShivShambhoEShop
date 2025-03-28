@@ -1,6 +1,6 @@
-﻿using eShop.Ordering.Domain.SeedWork;
+﻿using ShivShambho_eShop.Ordering.Domain.SeedWork;
 
-namespace eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+namespace ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 
 public class Address : ValueObject
 {

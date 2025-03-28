@@ -1,4 +1,4 @@
-﻿namespace eShop.PaymentProcessor;
+﻿namespace ShivShambho_eShop.PaymentProcessor;
 
 public class PaymentOptions
 {

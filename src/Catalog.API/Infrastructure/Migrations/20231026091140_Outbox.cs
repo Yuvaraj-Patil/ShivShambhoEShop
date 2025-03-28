@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace eShop.Catalog.API.Infrastructure.Migrations
+namespace ShivShambho_eShop.Catalog.API.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class Outbox : Migration

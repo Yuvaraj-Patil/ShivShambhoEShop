@@ -1,11 +1,11 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
-using eShop.ClientApp.Models.Basket;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Models.Marketing;
-using eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Models.Marketing;
+using ShivShambho_eShop.ClientApp.Services.Settings;
 
-namespace eShop.ClientApp.Services.FixUri;
+namespace ShivShambho_eShop.ClientApp.Services.FixUri;
 
 public class FixUriService : IFixUriService
 {

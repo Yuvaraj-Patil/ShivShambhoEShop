@@ -1,7 +1,7 @@
 #nullable enable
-using eShop.ClientApp.Models.Token;
+using ShivShambho_eShop.ClientApp.Models.Token;
 
-namespace eShop.ClientApp.Services.Settings;
+namespace ShivShambho_eShop.ClientApp.Services.Settings;
 
 public interface ISettingsService
 {

@@ -1,7 +1,7 @@
-using eShop.ClientApp.Animations.Base;
-using eShop.ClientApp.Helpers;
+using ShivShambho_eShop.ClientApp.Animations.Base;
+using ShivShambho_eShop.ClientApp.Helpers;
 
-namespace eShop.ClientApp.Animations;
+namespace ShivShambho_eShop.ClientApp.Animations;
 
 public class FadeToAnimation : AnimationBase
 {

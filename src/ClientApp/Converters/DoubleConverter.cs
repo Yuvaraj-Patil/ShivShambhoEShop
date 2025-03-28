@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using CommunityToolkit.Maui.Converters;
 
-namespace eShop.ClientApp.Converters;
+namespace ShivShambho_eShop.ClientApp.Converters;
 
 public class DoubleConverter : BaseConverter<double, string>
 {

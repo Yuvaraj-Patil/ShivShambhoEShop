@@ -1,10 +1,10 @@
-using eShop.ClientApp.Helpers;
-using eShop.ClientApp.Models.Catalog;
-using eShop.ClientApp.Services.FixUri;
-using eShop.ClientApp.Services.RequestProvider;
-using eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Helpers;
+using ShivShambho_eShop.ClientApp.Models.Catalog;
+using ShivShambho_eShop.ClientApp.Services.FixUri;
+using ShivShambho_eShop.ClientApp.Services.RequestProvider;
+using ShivShambho_eShop.ClientApp.Services.Settings;
 
-namespace eShop.ClientApp.Services.Catalog;
+namespace ShivShambho_eShop.ClientApp.Services.Catalog;
 
 public class CatalogService : ICatalogService
 {

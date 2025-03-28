@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Effects;
+﻿namespace ShivShambho_eShop.ClientApp.Effects;
 
 public static class ThemeEffects
 {

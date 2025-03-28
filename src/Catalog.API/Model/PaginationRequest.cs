@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace eShop.Catalog.API.Model;
+namespace ShivShambho_eShop.Catalog.API.Model;
 
 public record PaginationRequest(
     [property: Description("Number of items to return in a single page of results")]

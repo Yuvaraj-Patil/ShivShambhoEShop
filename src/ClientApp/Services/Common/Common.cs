@@ -1,4 +1,4 @@
-﻿namespace eShop.ClientApp.Services.Common;
+﻿namespace ShivShambho_eShop.ClientApp.Services.Common;
 
 public static class Common
 {

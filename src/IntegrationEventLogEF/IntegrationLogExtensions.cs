@@ -1,4 +1,4 @@
-﻿namespace eShop.IntegrationEventLogEF;
+﻿namespace ShivShambho_eShop.IntegrationEventLogEF;
 
 public static class IntegrationLogExtensions
 {

@@ -1,6 +1,6 @@
-﻿using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+﻿using ShivShambho_eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.UnitTests.Domain;
+namespace ShivShambho_eShop.Ordering.UnitTests.Domain;
 
 public class AddressBuilder
 {

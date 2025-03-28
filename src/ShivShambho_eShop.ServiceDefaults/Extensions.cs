@@ -9,7 +9,7 @@ using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
 
-namespace eShop.ServiceDefaults;
+namespace ShivShambho_eShop.ServiceDefaults;
 
 public static partial class Extensions
 {

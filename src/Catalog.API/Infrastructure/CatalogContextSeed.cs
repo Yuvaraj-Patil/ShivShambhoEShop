@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
-using eShop.Catalog.API.Services;
+using ShivShambho_eShop.Catalog.API.Services;
 using Pgvector;
 
-namespace eShop.Catalog.API.Infrastructure;
+namespace ShivShambho_eShop.Catalog.API.Infrastructure;
 
 public partial class CatalogContextSeed(
     IWebHostEnvironment env,
@@ -26,29 +26,29 @@ public partial class CatalogContextSeed(
             var sourceJson = File.ReadAllText(sourcePath);
             var sourceItems = JsonSerializer.Deserialize<CatalogSourceEntry[]>(sourceJson);
 
-            context.CatalogBrands.RemoveRange(context.CatalogBrands);
-            await context.CatalogBrands.AddRangeAsync(sourceItems.Select(x => x.Brand).Distinct()
-                .Select(brandName => new CatalogBrand { Brand = brandName }));
-            logger.LogInformation("Seeded catalog with {NumBrands} brands", context.CatalogBrands.Count());
+            context.ProductCategory.RemoveRange(context.ProductCategory);
+            await context.ProductCategory.AddRangeAsync(sourceItems.Select(x => x.Category).Distinct()
+                .Select(brandName => new ProductCategory { CategoryName = brandName }));
+            logger.LogInformation("Seeded catalog with {NumBrands} brands", context.ProductCategory.Count());
 
-            context.CatalogTypes.RemoveRange(context.CatalogTypes);
-            await context.CatalogTypes.AddRangeAsync(sourceItems.Select(x => x.Type).Distinct()
-                .Select(typeName => new CatalogType { Type = typeName }));
-            logger.LogInformation("Seeded catalog with {NumTypes} types", context.CatalogTypes.Count());
+            context.SubCategory.RemoveRange(context.SubCategory);
+            await context.SubCategory.AddRangeAsync(sourceItems.Select(x => x.SubCategory).Distinct()
+                .Select(typeName => new SubCategory { SubCategoryName = typeName }));
+            logger.LogInformation("Seeded catalog with {NumTypes} types", context.SubCategory.Count());
 
             await context.SaveChangesAsync();
 
-            var brandIdsByName = await context.CatalogBrands.ToDictionaryAsync(x => x.Brand, x => x.Id);
-            var typeIdsByName = await context.CatalogTypes.ToDictionaryAsync(x => x.Type, x => x.Id);
+            var brandIdsByName = await context.ProductCategory.ToDictionaryAsync(x => x.CategoryName, x => x.CategoryId);
+            var typeIdsByName = await context.SubCategory.ToDictionaryAsync(x => x.SubCategoryName, x => x.SubCategoryId);
 
             var catalogItems = sourceItems.Select(source => new CatalogItem
             {
-                Id = source.Id,
+                ProductId = source.Id,
                 Name = source.Name,
                 Description = source.Description,
                 Price = source.Price,
-                CatalogBrandId = brandIdsByName[source.Brand],
-                CatalogTypeId = typeIdsByName[source.Type],
+                CategoryId = brandIdsByName[source.Category],
+                SubCategoryId = typeIdsByName[source.SubCategory],
                 AvailableStock = 100,
                 MaxStockThreshold = 200,
                 RestockThreshold = 10,
@@ -74,8 +74,8 @@ public partial class CatalogContextSeed(
     private class CatalogSourceEntry
     {
         public int Id { get; set; }
-        public string Type { get; set; }
-        public string Brand { get; set; }
+        public string SubCategory { get; set; }
+        public string Category { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }

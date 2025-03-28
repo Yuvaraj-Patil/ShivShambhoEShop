@@ -1,13 +1,13 @@
-﻿namespace eShop.Catalog.API.Infrastructure.EntityConfigurations;
+﻿namespace ShivShambho_eShop.Catalog.API.Infrastructure.EntityConfigurations;
 
-class CatalogTypeEntityTypeConfiguration
-    : IEntityTypeConfiguration<CatalogType>
+class SubCategoryEntityTypeConfiguration
+    : IEntityTypeConfiguration<SubCategory>
 {
-    public void Configure(EntityTypeBuilder<CatalogType> builder)
+    public void Configure(EntityTypeBuilder<SubCategory> builder)
     {
-        builder.ToTable("CatalogType");
+        builder.ToTable("SubCategory");
 
-        builder.Property(cb => cb.Type)
+        builder.Property(cb => cb.SubCategoryName)
             .HasMaxLength(100);
     }
 }

@@ -1,6 +1,6 @@
-﻿using eShop.WebAppComponents.Catalog;
+﻿using ShivShambho_eShop.WebAppComponents.Catalog;
 
-namespace eShop.WebApp.Services
+namespace ShivShambho_eShop.WebApp.Services
 {
     public interface IBasketState
     {

@@ -1,12 +1,12 @@
 using System.Net;
-using eShop.ClientApp.Helpers;
-using eShop.ClientApp.Models.Basket;
-using eShop.ClientApp.Models.Orders;
-using eShop.ClientApp.Services.Identity;
-using eShop.ClientApp.Services.RequestProvider;
-using eShop.ClientApp.Services.Settings;
+using ShivShambho_eShop.ClientApp.Helpers;
+using ShivShambho_eShop.ClientApp.Models.Basket;
+using ShivShambho_eShop.ClientApp.Models.Orders;
+using ShivShambho_eShop.ClientApp.Services.Identity;
+using ShivShambho_eShop.ClientApp.Services.RequestProvider;
+using ShivShambho_eShop.ClientApp.Services.Settings;
 
-namespace eShop.ClientApp.Services.Order;
+namespace ShivShambho_eShop.ClientApp.Services.Order;
 
 public class OrderService : IOrderService
 {

@@ -2,10 +2,10 @@
 using System.Text.Json;
 using Asp.Versioning;
 using Asp.Versioning.Http;
-using eShop.Catalog.API.Model;
+using ShivShambho_eShop.Catalog.API.Model;
 using Microsoft.AspNetCore.Mvc.Testing;
 
-namespace eShop.Catalog.FunctionalTests;
+namespace ShivShambho_eShop.Catalog.FunctionalTests;
 
 public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
 {
@@ -63,7 +63,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         response = version switch
         {
             1.0 => await _httpClient.PutAsJsonAsync("/api/catalog/items", itemToUpdate),
-            2.0 => await _httpClient.PutAsJsonAsync($"/api/catalog/items/{itemToUpdate.Id}", itemToUpdate),
+            2.0 => await _httpClient.PutAsJsonAsync($"/api/catalog/items/{itemToUpdate.ProductId}", itemToUpdate),
             _ => throw new ArgumentOutOfRangeException(nameof(version), version, null)
         };
         response.EnsureSuccessStatusCode();
@@ -75,7 +75,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         var updatedItem = JsonSerializer.Deserialize<CatalogItem>(body, _jsonSerializerOptions);
 
         // Assert - 1
-        Assert.Equal(itemToUpdate.Id, updatedItem.Id);
+        Assert.Equal(itemToUpdate.ProductId, updatedItem.ProductId);
         Assert.NotEqual(priorAvailableStock, updatedItem.AvailableStock);
     }
 
@@ -99,7 +99,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         response = version switch
         {
             1.0 => await _httpClient.PutAsJsonAsync("/api/catalog/items", itemToUpdate),
-            2.0 => await _httpClient.PutAsJsonAsync($"/api/catalog/items/{itemToUpdate.Id}", itemToUpdate),
+            2.0 => await _httpClient.PutAsJsonAsync($"/api/catalog/items/{itemToUpdate.ProductId}", itemToUpdate),
             _ => throw new ArgumentOutOfRangeException(nameof(version), version, null)
         };
         response.EnsureSuccessStatusCode();
@@ -111,7 +111,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         var updatedItem = JsonSerializer.Deserialize<CatalogItem>(body, _jsonSerializerOptions);
 
         // Assert - 1
-        Assert.Equal(itemToUpdate.Id, updatedItem.Id);
+        Assert.Equal(itemToUpdate.ProductId, updatedItem.ProductId);
         Assert.Equal(1.99m, updatedItem.Price);
         Assert.NotEqual(priorAvailableStock, updatedItem.AvailableStock);
     }
@@ -151,7 +151,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         var result = JsonSerializer.Deserialize<CatalogItem>(body, _jsonSerializerOptions);
 
         // Assert
-        Assert.Equal(2, result.Id);
+        Assert.Equal(2, result.ProductId);
         Assert.NotNull(result);
     }
 
@@ -281,8 +281,8 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         Assert.Equal(4, result.Count);
         Assert.Equal(0, result.PageIndex);
         Assert.Equal(5, result.PageSize);
-        Assert.Equal(3, result.Data.ToList().FirstOrDefault().CatalogTypeId);
-        Assert.Equal(3, result.Data.ToList().FirstOrDefault().CatalogBrandId);
+        Assert.Equal(3, result.Data.ToList().FirstOrDefault().SubCategoryId);
+        Assert.Equal(3, result.Data.ToList().FirstOrDefault().CategoryId);
     }
 
     [Theory]
@@ -310,7 +310,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         Assert.Equal(11, result.Count);
         Assert.Equal(0, result.PageIndex);
         Assert.Equal(5, result.PageSize);
-        Assert.Equal(3, result.Data.ToList().FirstOrDefault().CatalogBrandId);
+        Assert.Equal(3, result.Data.ToList().FirstOrDefault().CategoryId);
     }
 
     [Theory]
@@ -326,7 +326,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         // Arrange
         response.EnsureSuccessStatusCode();
         var body = await response.Content.ReadAsStringAsync();
-        var result = JsonSerializer.Deserialize<List<CatalogType>>(body, _jsonSerializerOptions);
+        var result = JsonSerializer.Deserialize<List<SubCategory>>(body, _jsonSerializerOptions);
 
         // Assert
         Assert.Equal(8, result.Count);
@@ -346,7 +346,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         // Arrange
         response.EnsureSuccessStatusCode();
         var body = await response.Content.ReadAsStringAsync();
-        var result = JsonSerializer.Deserialize<List<CatalogBrand>>(body, _jsonSerializerOptions);
+        var result = JsonSerializer.Deserialize<List<ProductCategory>>(body, _jsonSerializerOptions);
 
         // Assert
         Assert.Equal(13, result.Count);
@@ -368,15 +368,15 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
 
         // Act - 1
         var bodyContent = new CatalogItem {
-            Id = id,
+            ProductId = id,
             Name = "TestCatalog1",
             Description = "Test catalog description 1",
             Price = 11000.08m,
             PictureFileName = null,
-            CatalogTypeId = 8,
-            CatalogType = null,
-            CatalogBrandId = 13,
-            CatalogBrand = null,
+            SubCategoryId = 8,
+            SubCategory = null,
+            CategoryId = 13,
+            Category = null,
             AvailableStock = 100,
             RestockThreshold = 10,
             MaxStockThreshold = 200,
@@ -392,7 +392,7 @@ public sealed class CatalogApiTests : IClassFixture<CatalogApiFixture>
         var addedItem = JsonSerializer.Deserialize<CatalogItem>(body, _jsonSerializerOptions);
 
         // Assert - 1
-        Assert.Equal(bodyContent.Id, addedItem.Id);
+        Assert.Equal(bodyContent.ProductId, addedItem.ProductId);
 
     }
 

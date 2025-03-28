@@ -1,6 +1,6 @@
-using eShop.ClientApp.Models.User;
+using ShivShambho_eShop.ClientApp.Models.User;
 
-namespace eShop.ClientApp.Services.Identity;
+namespace ShivShambho_eShop.ClientApp.Services.Identity;
 
 public class IdentityMockService : IIdentityService
 {

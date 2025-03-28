@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using eShop.OrderProcessor.Events;
+using ShivShambho_eShop.OrderProcessor.Events;
 
-namespace eShop.OrderProcessor.Extensions;
+namespace ShivShambho_eShop.OrderProcessor.Extensions;
 
 public static class Extensions
 {
