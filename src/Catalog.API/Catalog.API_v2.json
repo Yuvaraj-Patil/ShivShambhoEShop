@@ -354,7 +354,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/SubCategory3"
+                    "$ref": "#/components/schemas/SubCategory2"
                   }
                 }
               }
@@ -401,7 +401,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductCategory3"
+                    "$ref": "#/components/schemas/ProductCategory2"
                   }
                 }
               }
@@ -667,7 +667,7 @@
             "format": "int32"
           },
           "category": {
-            "$ref": "#/components/schemas/ProductCategory3"
+            "$ref": "#/components/schemas/ProductCategory2"
           },
           "availableStock": {
             "type": "integer",
@@ -722,7 +722,7 @@
             "format": "int32"
           },
           "category": {
-            "$ref": "#/components/schemas/ProductCategory3"
+            "$ref": "#/components/schemas/ProductCategory2"
           },
           "availableStock": {
             "type": "integer",
@@ -777,7 +777,7 @@
             "format": "int32"
           },
           "category": {
-            "$ref": "#/components/schemas/ProductCategory3"
+            "$ref": "#/components/schemas/ProductCategory2"
           },
           "availableStock": {
             "type": "integer",
@@ -864,7 +864,7 @@
           "subCategories": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SubCategory3"
+              "$ref": "#/components/schemas/SubCategory2"
             }
           }
         }
@@ -886,7 +886,7 @@
           "subCategories": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SubCategory3"
+              "$ref": "#/components/schemas/SubCategory2"
             }
           }
         }
@@ -908,7 +908,7 @@
           "subCategories": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SubCategory3"
+              "$ref": "#/components/schemas/SubCategory2"
             }
           }
         }

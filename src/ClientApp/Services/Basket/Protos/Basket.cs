@@ -36,8 +36,8 @@ namespace ShivShambho_eShop.ClientApp.BasketGrpcClient {
             "ZXRBcGkuVXBkYXRlQmFza2V0UmVxdWVzdBohLkJhc2tldEFwaS5DdXN0b21l",
             "ckJhc2tldFJlc3BvbnNlIgASUQoMRGVsZXRlQmFza2V0Eh4uQmFza2V0QXBp",
             "LkRlbGV0ZUJhc2tldFJlcXVlc3QaHy5CYXNrZXRBcGkuRGVsZXRlQmFza2V0",
-            "UmVzcG9uc2UiAEIjqgIgZVNob3AuQ2xpZW50QXBwLkJhc2tldEdycGNDbGll",
-            "bnRiBnByb3RvMw=="));
+            "UmVzcG9uc2UiAEIvqgIsU2hpdlNoYW1iaG9fZVNob3AuQ2xpZW50QXBwLkJh",
+            "c2tldEdycGNDbGllbnRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
